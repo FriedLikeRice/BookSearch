@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-graphql-app
+    env: node
+    buildCommand: 'npm install'
+    startCommand: 'node server.js'
+    envVars:
+      - key: MONGODB_URI
+        value: YOUR_MONGODB_URI
+      - key: JWT_SECRET
+        value: YOUR_JWT_SECRET
